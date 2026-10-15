@@ -1,0 +1,8 @@
+* text=auto
+*.c text eol=crlf
+*.h text eol=crlf
+*.s text eol=crlf
+*.ld text eol=lf
+*.md text eol=lf
+*.ioc text eol=crlf
+*.png binary

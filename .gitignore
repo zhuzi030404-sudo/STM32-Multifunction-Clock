@@ -1,0 +1,29 @@
+# Generated build output; recreate in STM32CubeIDE.
+/Debug/
+/Release/
+/build/
+*.o
+*.d
+*.su
+*.cyclo
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# Local workspaces and debug launch settings.
+/.metadata/
+*.launch
+/.settings/*
+!/.settings/org.eclipse.core.resources.prefs
+
+# Local logs, backups and editor files.
+*.log
+*.bak
+*.tmp
+*~
+/.vscode/
+/.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,29 @@
+# Include the new source when building before CubeIDE refreshes its source list.
+ifeq ($(filter ./Core/Src/dino.o,$(OBJS)),)
+USER_OBJS += ./Core/Src/dino.o
+endif
+-include ./Core/Src/dino.d
+ifeq ($(filter ./Core/Src/emoji.o,$(OBJS)),)
+USER_OBJS += ./Core/Src/emoji.o
+endif
+-include ./Core/Src/emoji.d
+ifeq ($(filter ./Core/Src/buzzer.o,$(OBJS)),)
+USER_OBJS += ./Core/Src/buzzer.o
+endif
+-include ./Core/Src/buzzer.d
+ifeq ($(filter ./Core/Src/light_sensor.o,$(OBJS)),)
+USER_OBJS += ./Core/Src/light_sensor.o
+endif
+-include ./Core/Src/light_sensor.d
+ifeq ($(filter ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o,$(OBJS)),)
+USER_OBJS += ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+endif
+-include ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.d
+ifeq ($(filter ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o,$(OBJS)),)
+USER_OBJS += ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+endif
+-include ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.d
+ifeq ($(filter ./Core/Src/encoder.o,$(OBJS)),)
+USER_OBJS += ./Core/Src/encoder.o
+endif
+-include ./Core/Src/encoder.d
